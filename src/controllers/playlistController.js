@@ -19,6 +19,14 @@ const getOnePlaylist = (req, res, next) => {
   next();
 };
 
+const getUserPlaylist= (req, res, next) => {
+  let idUsu = req.params.id;
+  const PlaylistUser = playlistsService.getUserPlaylist(idUsu);
+  res.send(PlaylistUser).end();
+  res.locals.mensaje = "OK";
+  next();
+};
 
 module.exports.getAllPlaylists = getAllPlaylists;
 module.exports.getOnePlaylist = getOnePlaylist;
+module.exports.getUserPlaylist= getUserPlaylist;

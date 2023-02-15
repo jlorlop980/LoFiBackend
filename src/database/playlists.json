@@ -3,6 +3,7 @@
         {
             "id":1,
             "name":"Kupla",
+            "userId":1,
             "songs":
                 [
                     {
@@ -22,6 +23,7 @@
         {
             "id":2,
             "name":"Night",
+            "userId":1,
             "songs":
                 [
                     {

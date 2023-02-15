@@ -1,0 +1,11 @@
+{
+    "users":
+    [
+        {
+            "id":1,
+            "username":"admin",
+            "passw":"admin",
+            "playlists":[1,2]
+        }
+    ]
+}

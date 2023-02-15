@@ -2,6 +2,8 @@ const express = require("express")
 const cors = require('cors')
 
 const app = express()
+app.use(express.static('src/public'));
+
 const routesv1 = require("./routes/v1/indexRoutes.js")
 
 app.use(cors());

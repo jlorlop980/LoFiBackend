@@ -11,9 +11,14 @@ const getOnePlaylist = (nombre) => {
   return playlist;
 };
 
+const getUserPlaylist = (idUsu) => {
+  const playlist = playlistsModel.getUserPlaylist(idUsu);
+  return playlist;
+};
 
 module.exports = {
   getAllPlaylists,
   getOnePlaylist,
+  getUserPlaylist
 
 };
