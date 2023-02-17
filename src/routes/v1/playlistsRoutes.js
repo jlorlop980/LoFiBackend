@@ -4,7 +4,8 @@ const playlistsController = require("../../controllers/playlistController")
 
 //RUTA DE ENTRADA HASTA ESTE MÓDULO: /api/v1/playlists/
 router.route("/")
-  .get(playlistsController.getAllPlaylists);
+  .get(playlistsController.getAllPlaylists)
+  .post(playlistsController.addNewPlaylist)
 
 router.route("/:id")
   .get(playlistsController.getOnePlaylist);

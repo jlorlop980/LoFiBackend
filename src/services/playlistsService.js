@@ -16,9 +16,15 @@ const getUserPlaylist = (idUsu) => {
   return playlist;
 };
 
+const addNewPlaylist = (userid, nombre)=>{
+  const newPl= playlistsModel.addNewPlaylist(userid,nombre)
+  return newPl;
+}
+
 module.exports = {
   getAllPlaylists,
   getOnePlaylist,
-  getUserPlaylist
+  getUserPlaylist,
+  addNewPlaylist
 
 };

@@ -1,46 +1,73 @@
 {
-    "playlists":[
+  "playlists": [
+    {
+      "id": 1,
+      "name": "Kupla",
+      "userId": 1,
+      "songs": [
         {
-            "id":1,
-            "name":"Kupla",
-            "userId":1,
-            "songs":
-                [
-                    {
-                        "idSonsg":1,
-                        "name":"Eons",
-                        "author":"Kupla",
-                        "route":"./resources/songs/Eons_Kupla.mp3"
-                    },
-                    {
-                        "idSong":3,
-                        "name":"Twilight",
-                        "artist":"Kupla",
-                        "route":"./resources/songs/Twilight_Kupla.mp3"
-                    }
-                ]
+          "idSonsg": 1,
+          "name": "Eons",
+          "author": "Kupla",
+          "route": "/songs/Eons_Kupla.mp3"
         },
         {
-            "id":2,
-            "name":"Night",
-            "userId":1,
-            "songs":
-                [
-                    {
-                        "id":5,
-                        "name":"Edamame",
-                        "artist":"Glimpse-DontCry",
-                        "route":"./resources/songs/edamame_Glimpse-DontCry.mp3"
-                    },
-                    {
-                        "id":2,
-                        "name":"theOtherSide",
-                        "artist":"BVG",
-                        "route":"./resources/songs/theOtherside_BVG.mp3"
-                    }
-                ]
+          "idSong": 3,
+          "name": "Twilight",
+          "artist": "Kupla",
+          "route": "/songs/Twilight_Kupla.mp3"
         }
-    ]
-
-
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Night",
+      "userId": 1,
+      "songs": [
+        {
+          "id": 5,
+          "name": "Edamame",
+          "artist": "Glimpse-DontCry",
+          "route": "/songs/edamame_Glimpse-DontCry.mp3"
+        },
+        {
+          "id": 2,
+          "name": "theOtherSide",
+          "artist": "BVG",
+          "route": "/songs/theOtherside_BVG.mp3"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Buhos",
+      "userId": 1,
+      "songs": [
+        {
+          "id": 4,
+          "name": "OwlsofTheNight",
+          "artist": "Kupla",
+          "route": "/songs/Owl_Kupla.mp3"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "luo",
+      "userId": 5,
+      "songs": []
+    },
+    {
+      "id": 5,
+      "name": "luo",
+      "userId": 1,
+      "songs": []
+    },
+    {
+      "id": 6,
+      "name": "paco",
+      "userId": 1,
+      "songs": []
+    }
+  ]
 }

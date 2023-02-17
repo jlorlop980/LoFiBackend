@@ -4,31 +4,31 @@
             "id":1,
             "name":"Eons",
             "artist":"Kupla",
-            "route":"/public/songs/Eons_Kupla.mp3"
+            "route":"/songs/Eons_Kupla.mp3"
         },
         {
             "id":2,
             "name":"theOtherSide",
             "artist":"BVG",
-            "route":"/public/songs/theOtherside_BVG.mp3"
+            "route":"/songs/theOtherside_BVG.mp3"
         },
         {
             "id":3,
             "name":"Twilight",
             "artist":"Kupla",
-            "route":"/public/songs/Twilight_Kupla.mp3"
+            "route":"/songs/Twilight_Kupla.mp3"
         },
         {
             "id":4,
             "name":"OwlsofTheNight",
             "artist":"Kupla",
-            "route":"/public/songs/OwlsofTheNight_Kupla.mp3"
+            "route":"/songs/Owl_Kupla.mp3"
         },
         {
             "id":5,
             "name":"Edamame",
             "artist":"Glimpse-DontCry",
-            "route":"/public/songs/edamame_Glimpse-DontCry.mp3"
+            "route":"/songs/edamame_Glimpse-DontCry.mp3"
         }
 ]
 }

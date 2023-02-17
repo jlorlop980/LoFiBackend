@@ -9,7 +9,13 @@ const getAllPlaylists = (req, res, next) => {
   next();
 };
 
-
+const addNewPlaylist = (req, res, next)=> {
+  const {userId, nombre} = req.body;
+  const newPl = playlistsService.addNewPlaylist(userId,nombre);
+  res.send(newPl).end();
+  res.locals.mensaje= "creada con exito"
+  next();
+}
 
 const getOnePlaylist = (req, res, next) => {
   let nombreSong = req.params.id;
@@ -30,3 +36,4 @@ const getUserPlaylist= (req, res, next) => {
 module.exports.getAllPlaylists = getAllPlaylists;
 module.exports.getOnePlaylist = getOnePlaylist;
 module.exports.getUserPlaylist= getUserPlaylist;
+module.exports.addNewPlaylist = addNewPlaylist;
