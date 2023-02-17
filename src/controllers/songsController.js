@@ -16,7 +16,7 @@ const getOneSong = (req, res, next) => {
   const Song = songsService.getOneSong(nombreSong);
   console.log(Song)
   console.log(path.join(__dirname,"..", Song.route))
-  res.sendFile(path.join(__dirname,"..", Song.route));
+  res.send(Song);
   res.locals.mensaje = "OK";
   next();
 };

@@ -50,24 +50,6 @@
           "route": "/songs/Owl_Kupla.mp3"
         }
       ]
-    },
-    {
-      "id": 4,
-      "name": "luo",
-      "userId": 5,
-      "songs": []
-    },
-    {
-      "id": 5,
-      "name": "luo",
-      "userId": 1,
-      "songs": []
-    },
-    {
-      "id": 6,
-      "name": "paco",
-      "userId": 1,
-      "songs": []
     }
   ]
 }
