@@ -6,13 +6,13 @@
       "userId": 1,
       "songs": [
         {
-          "idSonsg": 1,
+          "id": 1,
           "name": "Eons",
-          "author": "Kupla",
+          "artist": "Kupla",
           "route": "/songs/Eons_Kupla.mp3"
         },
         {
-          "idSong": 3,
+          "id": 3,
           "name": "Twilight",
           "artist": "Kupla",
           "route": "/songs/Twilight_Kupla.mp3"
