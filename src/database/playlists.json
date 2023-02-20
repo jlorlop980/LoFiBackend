@@ -50,6 +50,12 @@
           "route": "/songs/Owl_Kupla.mp3"
         }
       ]
+    },
+    {
+      "id": 4,
+      "name": "sectumsempra",
+      "userId": 2,
+      "songs": []
     }
   ]
 }

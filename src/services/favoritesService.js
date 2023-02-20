@@ -21,9 +21,15 @@ const addNewFavorite = (userid, cancion)=>{
   return newFV;
 }
 
+const deleteFavorite=(id)=>{
+  const delFavo=favoritesModel.deleteFavorite(id);
+  return delFavo;
+}
+
 module.exports = {
   getAllFavorites,
   getOneFavorite,
   getUserFavorites,
-  addNewFavorite
+  addNewFavorite,
+  deleteFavorite
 };

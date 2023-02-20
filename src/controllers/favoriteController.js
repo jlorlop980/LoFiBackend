@@ -33,7 +33,16 @@ const getUserFavorites= (req, res, next) => {
   next();
 };
 
+const deleteFavorite=(req,res,next)=>{
+  const id=req.params.id;
+  const delFav= favoritesService.deleteFavorite(id)
+  res.send(delFav).end();
+  res.locals.mensaje = "OK";
+  next();
+}
+
 module.exports.getAllFavorites = getAllFavorites;
 module.exports.getOneFavorite = getOneFavorite;
 module.exports.getUserFavorites = getUserFavorites;
 module.exports.addNewFavorite = addNewFavorite;
+module.exports.deleteFavorite = deleteFavorite;

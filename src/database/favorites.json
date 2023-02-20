@@ -19,16 +19,6 @@
         "artist": "Kupla",
         "route": "/songs/Eons_Kupla.mp3"
       }
-    },
-    {
-      "id": 3,
-      "userId": 3,
-      "song": {
-        "id": 1,
-        "name": "paquito",
-        "artist": "Kupla",
-        "route": "/songs/Eons_Kupla.mp3"
-      }
     }
   ]
 }

@@ -8,7 +8,8 @@ router.route("/")
   .post(favoritesController.addNewFavorite)
 
 router.route("/:id")
-  .get(favoritesController.getOneFavorite);
+  .get(favoritesController.getOneFavorite)
+  .delete(favoritesController.deleteFavorite);
 
 router.route("/userF/:id")
   .get(favoritesController.getUserFavorites)

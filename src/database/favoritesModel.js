@@ -41,9 +41,24 @@ const addNewFavorite= (userid, cancion) =>{
         return newFV;
 }
 
+const deleteFavorite=(id)=>{
+    const index = data.favorites.findIndex(fav => fav.id === id)
+    // Borramos la playlist
+    const deletedFav = data.favorites.splice(index, 1);
+    // Escribimos los nuevos datos en el fichero JSON
+    fs.writeFileSync(
+    "./src/database/favorites.json",
+    JSON.stringify(data, null, 2),
+    "utf8"
+    );
+    return deletedFav;
+}
+
+
 module.exports = {
     getAllFavorites,
     getOneFavorite,
     getUserFavorites,
     addNewFavorite,
+    deleteFavorite
 };

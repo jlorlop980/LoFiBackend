@@ -2,7 +2,7 @@
 
 Mi aplicacón consiste en un reproductor de música lofi en el que podemos crear playlists o dar me gusta a nuestras favoritas
 
-  
+En el archivo apilofi.json se encuentra un backup de insomnia  
   
 
 ## Recursos
@@ -30,7 +30,8 @@ Podremos eliminar una playlists, crearla, buscar playlist por id del creador o d
 + /usersP/:id
 	- GET -> Nos devuelve las playlists de un usuario (gracias a su id)
 + /nsong/:id
-	-  PUT -> nos permite añadir una cancion a ka playlist que corresponda el id
+	-  PUT -> nos permite añadir una cancion a la playlist que corresponda el id
+	- DELETE -> no permite eliminar una canción de una playlist
 
 ---
 
@@ -50,7 +51,7 @@ Podremos eliminar una playlists, crearla, buscar playlist por id del creador o d
 	- GET -> Nos devuelve un usuario según su id
 + /checkM/
 	- GET -> Nos devuelve los mails para luego en el fronto comprobar que no exista ya registrado ese mail
-+ /checkUser
++ /checkUser/
 	-  POST -> Usado para comprobar si el usuario y contraseña es correcto
 
 ---

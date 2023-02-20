@@ -33,7 +33,54 @@ const getUserPlaylist= (req, res, next) => {
   next();
 };
 
+const addSong = (req, res, next) => {
+  let id = req.params.id;
+  const cancion={
+                "id":req.body.id,
+                "name":req.body.name,
+                "artist":req.body.artist,
+                "route":req.body.route,
+              }
+  const pl = playlistsService.addSong(id,cancion);
+  res.send(pl).end();
+  res.locals.mensaje = "OK";
+  next();
+};
+
+const changeName = (req, res, next) => {
+  let id = req.params.id;
+  const name = req.body.name;
+  console.log(name)
+  const pl = playlistsService.changeName(id,name);
+  res.send(pl).end();
+  res.locals.mensaje = "OK";
+  next();
+};
+
+const deleteOnePlaylist= (req, res, next) => {
+  let id = req.params.id;
+  const deletedPl = playlistsService.deleteOnePlaylist(id);
+  res.send(deletedPl).end();
+  res.locals.mensaje = "OK";
+  next();
+};
+
+const deleteSongFromPlaylist=(req,res,next)=>{
+  let idPl= req.params.id;
+  let idCancion=req.body.id;
+  const pl= playlistsService.deleteSongFromPlaylist(idPl,idCancion);
+  res.send(pl).end();
+  res.locals.mensaje ="ok"
+}
+
+
 module.exports.getAllPlaylists = getAllPlaylists;
 module.exports.getOnePlaylist = getOnePlaylist;
 module.exports.getUserPlaylist= getUserPlaylist;
 module.exports.addNewPlaylist = addNewPlaylist;
+module.exports.changeName = changeName;
+module.exports.addSong = addSong;
+module.exports.deleteOnePlaylist = deleteOnePlaylist;
+module.exports.deleteSongFromPlaylist = deleteSongFromPlaylist;
+
+

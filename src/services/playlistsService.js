@@ -21,10 +21,34 @@ const addNewPlaylist = (userid, nombre)=>{
   return newPl;
 }
 
+const changeName = (id, newName)=>{
+  const pl= playlistsModel.changeName(id,newName)
+  return pl;
+}
+
+const addSong = (id, cancion)=>{
+  const pl= playlistsModel.addSong(id,cancion)
+  return pl;
+}
+
+const deleteOnePlaylist =(id)=>{
+  const pl=playlistsModel.deleteOnePlaylist(id);
+  return pl;
+}
+
+const deleteSongFromPlaylist= (idPl,idCancion)=>{
+  const pl=playlistsModel.deleteSongFromPlaylist(idPl,idCancion);
+  return pl
+}
+
 module.exports = {
   getAllPlaylists,
   getOnePlaylist,
   getUserPlaylist,
-  addNewPlaylist
+  addNewPlaylist,
+  addSong,
+  changeName,
+  deleteOnePlaylist,
+  deleteSongFromPlaylist
 
 };
