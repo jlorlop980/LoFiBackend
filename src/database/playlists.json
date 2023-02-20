@@ -40,9 +40,15 @@
     },
     {
       "id": 3,
-      "name": "Buhos",
+      "name": "Owls",
       "userId": 1,
       "songs": [
+        {
+          "id": 5,
+          "name": "Edamame",
+          "artist": "Glimpse-DontCry",
+          "route": "/songs/edamame_Glimpse-DontCry.mp3"
+        },
         {
           "id": 4,
           "name": "OwlsofTheNight",
@@ -50,12 +56,6 @@
           "route": "/songs/Owl_Kupla.mp3"
         }
       ]
-    },
-    {
-      "id": 4,
-      "name": "sectumsempra",
-      "userId": 2,
-      "songs": []
     }
   ]
 }
