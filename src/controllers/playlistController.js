@@ -1,6 +1,5 @@
 const playlistsService = require("../services/playlistsService");
 
-// Change both functions
 
 const getAllPlaylists = (req, res, next) => {
   const allSongs = playlistsService.getAllPlaylists();

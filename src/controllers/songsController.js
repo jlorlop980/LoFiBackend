@@ -1,6 +1,6 @@
 const songsService = require("../services/songsService");
 const path = require('path');
-// Change both functions
+
 
 const getAllSongs = (req, res, next) => {
   const allSongs = songsService.getAllSongs();

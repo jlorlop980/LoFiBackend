@@ -1,7 +1,5 @@
 const favoritesService = require("../services/favoritesService");
 
-// Change both functions
-
 const getAllFavorites = (req, res, next) => {
   const allFavs = favoritesService.getAllFavorites();
   res.send(allFavs).end();
